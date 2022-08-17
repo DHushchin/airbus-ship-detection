@@ -19,15 +19,30 @@ For this metric, object segments cannot overlap. There were a small percentage o
 git clone https://github.com/DHushchin/airbus-ship-detection
 ```
 
+### Create virtual environment
+```bash
+python -m venv venv
+```
+
+### Activate it (depends on the OS)
+```bash
+venv\Scripts\activate
+```
+
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Load [dataset](https://www.kaggle.com/competitions/airbus-ship-detection/data) to /data directory
-```
+```bash
 kaggle competitions download -c airbus-ship-detection
 ```
+
+### Run streamlit app locally 
+```bash
+streamlit run src/app.py
+```
+
 ## Deploy
 https://dhushchin-airbus-ship-detection-srcapp-d6ihp9.streamlitapp.com/
-
