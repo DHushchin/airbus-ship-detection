@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image, ImageOps
+from PIL import Image
 import numpy as np
 from utils import *
 from skimage import exposure

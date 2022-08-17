@@ -1,11 +1,10 @@
 import numpy as np
 import tensorflow as tf
-from keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, concatenate , Activation, BatchNormalization
+from keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, concatenate, Activation, BatchNormalization
 from keras.preprocessing.image import ImageDataGenerator
 from keras import models
 from skimage.morphology import binary_opening, label, disk
 from skimage.io import imread
-import cv2
 import os
 
 ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
@@ -72,7 +71,7 @@ def image_gen(in_df, batch_size=BATCH_SIZE):
         np.random.shuffle(all_batches)
         for c_img_id, c_masks in all_batches:
             rgb_path = ROOT_PATH + f'/data/train_v2/{c_img_id}'
-            c_img = cv2.imread(rgb_path)
+            c_img = imread(rgb_path)
             c_mask = np.expand_dims(masks_as_image(c_masks['EncodedPixels'].values), -1)
             
             c_img = c_img[::3, ::3]
