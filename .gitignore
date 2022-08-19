@@ -261,4 +261,7 @@ cython_debug/
 *.3dm
 *.max
 
-/data/
+/data/train_v2/
+/data/test_v2/
+/data/submission.csv
+/data/train_ship_segmentations_v2.csv
