@@ -7,10 +7,10 @@ from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, concatenate, Activation, BatchNormalization
 from keras import models
 import sys
-import path
+import pathlib
 
 
-directory = path.Path(__file__).abspath()
+directory = pathlib.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
 from constants import ROOT_PATH

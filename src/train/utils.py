@@ -3,9 +3,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import sys
-import path
+import pathlib
 
-directory = path.Path(__file__).abspath()
+directory = pathlib.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
 from img_processing import masks_as_image, imread
