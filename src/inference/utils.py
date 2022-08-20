@@ -8,7 +8,7 @@ directory = path.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
 from img_processing import encode_predict
-from train.utils import process_data, image_gen
+from training.utils import process_data, image_gen
 from constants import ROOT_PATH, BATCH_SIZE
 
 def get_submission(test_paths, unet):

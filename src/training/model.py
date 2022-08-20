@@ -1,5 +1,4 @@
 import tensorflow as tf
-import numpy as np
 from keras.metrics import MeanIoU
 from keras.optimizers import Adam
 from keras.losses import binary_crossentropy
@@ -14,7 +13,7 @@ directory = path.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
 from constants import ROOT_PATH
-from train.utils import image_gen
+from training.utils import image_gen
                 
 
 def build_model(n_filters=32):

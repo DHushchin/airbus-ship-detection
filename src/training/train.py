@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-from model import train_model, ROOT_PATH
-from utils import save_model, plot_history, process_data
+from model import train_model, save_model, ROOT_PATH
+from utils import plot_history, process_data
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 

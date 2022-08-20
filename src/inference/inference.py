@@ -6,9 +6,9 @@ import numpy as np
 directory = path.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
-from train.model import load_model
+from training.model import load_model
 from constants import ROOT_PATH
-from inference.utils import evaluate, get_submission, save_submission
+from utils import evaluate, get_submission, save_submission
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 

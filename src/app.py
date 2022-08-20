@@ -3,7 +3,7 @@ from skimage import exposure
 from PIL import Image
 
 from img_processing import image_predict, imread
-from train.model import load_model
+from training.model import load_model
 
 
 def segment_image(img, model):
