@@ -14,7 +14,7 @@ For this metric, object segments cannot overlap. There were a small percentage o
 
 ## Project structure
 Source code contains code for [exploratory data analysis](./src/EDA/EDA.ipynb), 
-model [training](./src/train) and [interference](./src/inference).
+model [training](./src/training) and [interference](./src/inference).
 [Model directoty](./model) contains pre-trained model and its weights.
 Also, there is [app.py](./src/app.py) script is an entry point of the streamlit application.
 streamlit folder contains [configuration](./.streamlit/config.toml) for the application.
@@ -32,10 +32,10 @@ streamlit folder contains [configuration](./.streamlit/config.toml) for the appl
      * [inference](./src/inference)
          * [inference.py](./src/inference/inference.py)
          * [utils.py](./src/inference/utils.py)
-     * [train](./src/train)
-         * [model.py](./src/train/model.py)
-         * [train.py](./src/train/train.py)
-         * [utils.py](./src/train/utils.py)
+     * [training](./src/train)
+         * [model.py](./src/training/model.py)
+         * [train.py](./src/training/train.py)
+         * [utils.py](./src/training/utils.py)
      * [app.py](./src/app.py)
      * [constants.py](./src/constants.py)
      * [img_processing.py](./src/img_processing.py)
