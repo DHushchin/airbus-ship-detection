@@ -12,6 +12,40 @@ For this metric, object segments cannot overlap. There were a small percentage o
 -   Numpy, Pandas, Matplotlib
 -   Streamlit
 
+## Project structure
+Source code contains code for [exploratory data analysis](./src/EDA/EDA.ipynb), 
+model [training](./src/train) and [interference](./src/inference).
+[Model directoty](./model) contains pre-trained model and its weights.
+Also, there is [app.py](./src/app.py) script is an entry point of the streamlit application.
+streamlit folder contains [configuration](./.streamlit/config.toml) for the application.
+
+## Project tree
+
+ * [.streamlit](./.streamlit)
+     * [config.toml](./.streamlit/config.toml)
+ * [model](./model)
+     * [model.h5](./model/model.h5)
+     * [weights.h5](./model/weights.h5)
+ * [src](./src)
+     * [EDA](./src/EDA)
+         * [EDA.ipynb](./src/EDA/EDA.ipynb)   
+     * [inference](./src/inference)
+         * [inference.py](./src/inference/inference.py)
+         * [utils.py](./src/inference/utils.py)
+     * [train](./src/train)
+         * [model.py](./src/train/model.py)
+         * [train.py](./src/train/train.py)
+         * [utils.py](./src/train/utils.py)
+     * [app.py](./src/app.py)
+     * [constants.py](./src/constants.py)
+     * [img_processing.py](./src/img_processing.py)
+ * [LICENSE](./LICENSE)
+ * [README.md](./README.md)
+ * [requirements.txt](./requirements.txt)
+ * [.gitignore](./.gitignore)
+ * [.gitattributes](./.gitattributes)
+ 
+
 ## Installation
 
 ### Clone project
@@ -43,6 +77,3 @@ kaggle competitions download -c airbus-ship-detection
 ```bash
 streamlit run src/app.py
 ```
-
-## Deploy
-https://dhushchin-airbus-ship-detection-srcapp-d6ihp9.streamlitapp.com/
